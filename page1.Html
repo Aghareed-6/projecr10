@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .logo {
+            height: 70px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-right: 50px;
+        }
+
+        .social-icons img {
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .banner {
+            position: relative;
+            height: 500px;
+            background-image: url('https://i.pinimg.com/736x/a9/49/21/a949210eb66b1dd6fcf40826b2d1f152.jpg');
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+        }
+
+        .banner-text {
+            position: absolute;
+            bottom: 100px;
+            right: 50px;
+            color: white;
+            font-size: 150px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .box-text-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://saudi2034.com.sa/wp-content/themes/bidding/assets/images/logo-w.png?v=hdr" alt="Logo" class="logo">
+    <div class="social-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670274.png" alt="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/128/12942/12942587.png" alt="Snapchat">
+    </div>
+</header>
+
+<div class="banner">
+    <div class="banner-text">أهلاً بالعالم</div>
+</div>
+
+<div class="content">
+    <a href="stadiums.html" class="box">
+        <img src="https://i.pinimg.com/474x/47/7c/53/477c538252505cf116acede88c10b691.jpg" alt="ملعب">
+        <div class="box-text-card">الملاعب</div>
+    </a>
+    <a href="hotels.html" class="box">
+        <img src="https://i.pinimg.com/736x/2e/df/39/2edf397356574d4075bbdac0a14701b6.jpg" alt="فنادق">
+        <div class="box-text-card">الفـنادق</div>
+    </a>
+    <a href="transport.html" class="box">
+        <img src="https://i.pinimg.com/474x/70/23/77/702377046eabee669c3da87d4379e195.jpg" alt="النقل">
+        <div class="box-text-card">النقل</div>
+    </a>
+    <a href="matches.html" class="box">
+        <img src="https://i.pinimg.com/736x/df/1e/e2/df1ee23dd976d070cb7bebfd5347be9c.jpg" alt="جدول المباريات">
+        <div class="box-text-card">جـدول المباريات</div>
+    </a>
+</div>
+
+</body>
+</html>
+

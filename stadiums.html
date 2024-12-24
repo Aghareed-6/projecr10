@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملاعب</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        .box p {
+            padding: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>الملاعب</h1>
+   
+</header>
+
+<div class="content">
+    <div class="box">
+        <img src="https://i.pinimg.com/736x/75/cf/d5/75cfd53bb3206855234f1299174ee18d.jpg" alt="ملعب 1">
+        
+    </div>
+    <div class="box">
+        <img src="https://i.pinimg.com/736x/47/7c/53/477c538252505cf116acede88c10b691.jpg" alt="ملعب 2">
+        
+    </div>
+    <div class="box">
+        <img src="https://i.pinimg.com/474x/57/82/bf/5782bfa03534b31fd4c34940932c4561.jpg" alt="ملعب 3">
+        
+    </div>
+    <div class="box">
+        <img src="https://i.pinimg.com/474x/7d/ba/b0/7dbab07ad9f9bfbe46b05f1227abc380.jpg" alt="ملعب 4">
+        
+    </div>
+</div>
+
+</body>
+</html>
+
